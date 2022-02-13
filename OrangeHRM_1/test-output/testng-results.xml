@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-11T10:37:08 IST" name="Suite" finished-at="2022-02-11T10:39:04 IST" duration-ms="115860">
+    <groups>
+    </groups>
+    <test started-at="2022-02-11T10:37:08 IST" name="TestA" finished-at="2022-02-11T10:39:04 IST" duration-ms="115860">
+      <class name="TestClass1.TestClassWithTestNG">
+        <test-method is-config="true" signature="launchBrowserforTestClass(java.lang.String)[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:37:08 IST" name="launchBrowserforTestClass" finished-at="2022-02-11T10:37:35 IST" duration-ms="26488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserforTestClass -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:37:35 IST" name="beforeClass" finished-at="2022-02-11T10:37:35 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:37:35 IST" name="beforeMethod" finished-at="2022-02-11T10:37:47 IST" duration-ms="11811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyFillAddEmployeeForm()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:37:47 IST" name="verifyFillAddEmployeeForm" finished-at="2022-02-11T10:38:12 IST" duration-ms="25275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFillAddEmployeeForm -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:12 IST" name="afterMethod" finished-at="2022-02-11T10:38:15 IST" duration-ms="3331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFillAddEmployeeForm status=SUCCESS method=TestClassWithTestNG.verifyFillAddEmployeeForm()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:15 IST" name="beforeMethod" finished-at="2022-02-11T10:38:18 IST" duration-ms="2604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyPrintCustomerTable()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:18 IST" name="verifyPrintCustomerTable" finished-at="2022-02-11T10:38:22 IST" duration-ms="4394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrintCustomerTable -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:22 IST" name="afterMethod" finished-at="2022-02-11T10:38:26 IST" duration-ms="3401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPrintCustomerTable status=SUCCESS method=TestClassWithTestNG.verifyPrintCustomerTable()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:26 IST" name="beforeMethod" finished-at="2022-02-11T10:38:28 IST" duration-ms="2437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyRecruitmentCandidateSearch()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:28 IST" name="verifyRecruitmentCandidateSearch" finished-at="2022-02-11T10:38:38 IST" duration-ms="10126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecruitmentCandidateSearch -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:38 IST" name="afterMethod" finished-at="2022-02-11T10:38:42 IST" duration-ms="3367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRecruitmentCandidateSearch status=SUCCESS method=TestClassWithTestNG.verifyRecruitmentCandidateSearch()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:42 IST" name="beforeMethod" finished-at="2022-02-11T10:38:44 IST" duration-ms="2455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTakeScreenShotOnBuzz()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:44 IST" name="verifyTakeScreenShotOnBuzz" finished-at="2022-02-11T10:38:54 IST" duration-ms="9320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTakeScreenShotOnBuzz -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:54 IST" name="afterMethod" finished-at="2022-02-11T10:38:57 IST" duration-ms="3311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTakeScreenShotOnBuzz status=SUCCESS method=TestClassWithTestNG.verifyTakeScreenShotOnBuzz()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:57 IST" name="beforeMethod" finished-at="2022-02-11T10:38:59 IST" duration-ms="2593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTitleAfterLogin()[pri:1, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:59 IST" name="verifyTitleAfterLogin" finished-at="2022-02-11T10:38:59 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleAfterLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:38:59 IST" name="afterMethod" finished-at="2022-02-11T10:39:03 IST" duration-ms="3421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleAfterLogin status=SUCCESS method=TestClassWithTestNG.verifyTitleAfterLogin()[pri:1, instance:TestClass1.TestClassWithTestNG@2f7298b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:39:03 IST" name="afterClass" finished-at="2022-02-11T10:39:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuit()[pri:0, instance:TestClass1.TestClassWithTestNG@2f7298b]" started-at="2022-02-11T10:39:03 IST" name="afterSuit" finished-at="2022-02-11T10:39:04 IST" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuit -->
+      </class> <!-- TestClass1.TestClassWithTestNG -->
+    </test> <!-- TestA -->
+  </suite> <!-- Suite -->
+</testng-results>
