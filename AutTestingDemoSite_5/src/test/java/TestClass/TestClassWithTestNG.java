@@ -3,6 +3,7 @@ package TestClass;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,8 +20,10 @@ import org.testng.asserts.SoftAssert;
 
 import Base.Browser;
 import POM.Arrivals;
+import POM.BookBasket;
 import POM.Home;
 import POM.MasteringJavaScript;
+import POM.MenuPage;
 import POM.SeleniumRuby;
 import POM.Shop;
 import POM.Sliders;
@@ -38,6 +41,8 @@ public class TestClassWithTestNG extends Browser
 	private SeleniumRuby seleniumRuby;
 	private ThinkingInHTML thinkingInHTML;
 	private MasteringJavaScript masteringJavaScript;
+	private MenuPage menu;
+	private BookBasket baskettab;
 	private int TestId;
 	
 	@BeforeTest
@@ -63,11 +68,13 @@ public class TestClassWithTestNG extends Browser
 	{
 		shop=new Shop(driver);
 		home=new Home(driver);
+		menu=new MenuPage(driver);
 		sliders= new Sliders(driver);
 		arrivals=new Arrivals(driver);
 		seleniumRuby=new SeleniumRuby(driver);
 		thinkingInHTML=new ThinkingInHTML(driver);
 		masteringJavaScript= new MasteringJavaScript(driver);
+		baskettab=new BookBasket(driver);
 		
 	}
 	
@@ -86,6 +93,7 @@ public class TestClassWithTestNG extends Browser
 		
 	}
 	
+	//Test Case 1
 	@Test
 	public void verifySliders()
 	{
@@ -103,6 +111,7 @@ public class TestClassWithTestNG extends Browser
 		softAssert.assertAll();
 	}
 	
+	//Test case 2
 	@Test
 	public void verifyArrivals()
 	{
@@ -120,6 +129,7 @@ public class TestClassWithTestNG extends Browser
 		softAssert.assertAll();
 	}
 	
+	//Test case 3
 	@Test
 	public void seleniumRuby()
 	{
@@ -145,7 +155,7 @@ public class TestClassWithTestNG extends Browser
 		
 	}
 	
-	
+	//Test Case 4
 	@Test
 	public void imagesDiscription()
 	{
@@ -158,48 +168,151 @@ public class TestClassWithTestNG extends Browser
 		
 		seleniumRuby.clickOnSeleniumRubyImage();
 		String DescriptionSeleneiumRubyPage =seleniumRuby.verifySeleniumRubyDescription();
-		if(DescriptionSeleneiumRubyPage.contains("Selenium WebDriver Recipes book is a quick problem-solving guide"))
-			{
-				System.out.println("Test Case is passed for description available for 1st image");
-			}
-		else
-			{
-				System.out.println("Test case is failed!");
-			}
-		
+		boolean descriptionOfSeleniumRubyPage=DescriptionSeleneiumRubyPage.contains("Selenium WebDriver Recipes book is a quick problem-solving guide");
+		softAssert.assertTrue(descriptionOfSeleniumRubyPage);
 		
 		driver.navigate().back();
-		
 		
 		thinkingInHTML.clickOnThinkingInHTMLImage();
 		thinkingInHTML.clickOnThinkingInHTMLImage();
 		String DescriptionThinkingInHTMLPage=thinkingInHTML.verifyThinkingInHTMLDescription();
-			if(DescriptionThinkingInHTMLPage.contains("This book provides you with an intermediate knowledge of HTML"))
-				{
-					System.out.println("Test Case is passed for description available for 2nd image");
-				}
-			else
-				{
-					System.out.println("Test case is failed!");
-				}
+		boolean descriptionOfThinkingHTMLPage= DescriptionThinkingInHTMLPage.contains("This book provides you with an intermediate knowledge of HTML");
+		softAssert.assertTrue(descriptionOfThinkingHTMLPage);
 		
 		driver.navigate().back();
-		
 		
 		masteringJavaScript.clickOnMasteringJavaScriptImage();
 		String DescriptionMasteringJavaScriptPage =masteringJavaScript.verifyMasteringJavaScriptDescription();
-			if(DescriptionMasteringJavaScriptPage.contains("it is difficult to find a topic related to JavaScript that has not been discussed"))
-				{
-					System.out.println("Test Case is passed for description available for 3rd image");
-				}
-			else
-				{
-					System.out.println("Test case is failed!");
-				}
+		boolean descriptionOfMasteringJavaScriptPage = DescriptionMasteringJavaScriptPage.contains("it is difficult to find a topic related to JavaScript that has not been discussed");
+		softAssert.assertTrue(descriptionOfMasteringJavaScriptPage);
+			
 		driver.navigate().back();
+		
 		softAssert.assertAll();
 		
 	}
+	
+	//Test case 5
+	@Test
+	public void imageReview()
+	{
+		TestId=105;
+		softAssert=new SoftAssert();
+		
+		int arrivalssize=arrivals.arrivalSize();
+		softAssert.assertEquals(arrivalssize, 3);
+		seleniumRuby.clickOnSeleniumRubyImage();
+		seleniumRuby.verifySeleniumRubyReviews();
+		
+		driver.navigate().back();
+		
+		thinkingInHTML.clickOnThinkingInHTMLImage();
+		thinkingInHTML.verifyThinkingHTMLReviews();
+		
+		driver.navigate().back();
+
+		masteringJavaScript.clickOnMasteringJavaScriptImage();
+		masteringJavaScript.verifyMasteringJavascriptReviews();
+		
+		softAssert.assertAll();
+		
+	}
+
+	
+	//Test case 6
+	@Test
+	public void addBookToBasket()
+	{
+		TestId=106;
+		
+		int arrivalssize=arrivals.arrivalSize();
+		softAssert.assertEquals(arrivalssize, 3);
+		
+		masteringJavaScript.clickOnMasteringJavaScriptImage();
+		masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+		
+		
+		softAssert.assertAll();
+	}
+	
+	
+	// Test Case 7
+	@Test
+	public void verifyHighestQuantityError()
+	{
+		TestId=107;
+		
+		int arrivalssize=arrivals.arrivalSize();
+		softAssert.assertEquals(arrivalssize, 3);
+		
+		masteringJavaScript.clickOnMasteringJavaScriptImage();
+		masteringJavaScript.addMasteringJavascriptBookToBasket("7934");
+		
+		
+		
+		softAssert.assertAll();
+	}
+	
+	
+	
+	//Test Case 8
+	@Test
+	public void checkBasketPage()
+	{
+		TestId=108;
+		
+		int arrivalssize=arrivals.arrivalSize();
+		softAssert.assertEquals(arrivalssize, 3);
+		
+		masteringJavaScript.clickOnMasteringJavaScriptImage();
+		masteringJavaScript.addMasteringJavascriptBookToBasket("2");
+		menu.clickMenuBasket();
+		softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+	
+		softAssert.assertAll();
+	}
+	
+	
+	//Test Case 9
+		@Test
+		public void ApplyCoupon()
+		{
+			TestId=109;
+			
+			int arrivalssize=arrivals.arrivalSize();
+			softAssert.assertEquals(arrivalssize, 3);
+			
+			masteringJavaScript.clickOnMasteringJavaScriptImage();
+			masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+			menu.clickMenuBasket();
+			softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+			
+			baskettab.enterCouponCodeAndClickApply();
+		
+			softAssert.assertAll();
+		}
+	
+		
+		//Test Case 10
+		@Test
+		public void unableToApplyCouponCode()
+		{
+					TestId=109;
+					
+					int arrivalssize=arrivals.arrivalSize();
+					softAssert.assertEquals(arrivalssize, 3);
+					
+					masteringJavaScript.clickOnMasteringJavaScriptImage();
+					masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+					menu.clickMenuBasket();
+					softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+					baskettab.enterCouponCodeAndClickApply();
+					
+					softAssert.assertAll();
+		}	
+		
+		
+	
 	
 	
 	@AfterMethod

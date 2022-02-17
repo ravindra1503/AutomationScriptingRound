@@ -9,19 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-//Test case 3 - Home page-images in arrivals should navigate
-	/*	1) Open the browser
-		2) Enter the URL “http://practice.automationtesting.in/”
-		3) Click on Shop Menu
-		4) Now click on Home menu button
-		5) Test whether the Home page has Three Arrivals only
-		6) The Home page must contains only three Arrivals
-		7) Now click the image in the Arrivals
-		8) Test whether it is navigating to next page where the user can add that book into his basket.
-		9) Image should be clickable and shoul navigate to next page where user can add that book to his basket
-		10-Home page-Arrival Images Discription  
-		*/
-
 public class MasteringJavaScript {
 	
 	private WebDriverWait wait;
@@ -35,6 +22,16 @@ public class MasteringJavaScript {
 	@FindBy (xpath="(//div[@title='Page 14'])//p")
 	private WebElement descriptionOfMasteringJavascript;
 	
+	@FindBy (xpath="//a[text()='Reviews (0)']")
+	private WebElement reviewsOfMasteringJavaScript;
+	
+	@FindBy (xpath="//button[text()='Add to basket']")
+	private WebElement addBookToBasket;
+	
+	@FindBy (xpath="//input[@type='number']")
+	private WebElement inputHighestQuantityForBook;
+	
+		
 	
 	public MasteringJavaScript(WebDriver driver)
 	{
@@ -55,5 +52,19 @@ public class MasteringJavaScript {
 		String DescriptionMasteringJavaScriptPage=descriptionOfMasteringJavascript.getText();
 		return DescriptionMasteringJavaScriptPage;
 	}
+	
+	public void verifyMasteringJavascriptReviews()
+	{
+		reviewsOfMasteringJavaScript.click();
+		
+	}
+	
+	public void addMasteringJavascriptBookToBasket(String NumberOfBooks)
+	{
+		inputHighestQuantityForBook.sendKeys(NumberOfBooks);
+		addBookToBasket.click();
+		
+	}
+	
 	
 }

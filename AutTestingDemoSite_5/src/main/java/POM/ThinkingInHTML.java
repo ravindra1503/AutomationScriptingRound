@@ -35,6 +35,8 @@ public class ThinkingInHTML {
 	@FindBy (xpath="(//div[@title='Page 7'])//p")
 	private WebElement descriptionOfThinkInHTML;
 	
+	@FindBy (xpath="//a[text()='Reviews (0)']")
+	private WebElement reviewsOfThinkingHTML;
 	
 	public ThinkingInHTML(WebDriver driver)
 	{
@@ -58,6 +60,14 @@ public class ThinkingInHTML {
 		
 		String DescriptionThinkingInHTMLPage=descriptionOfThinkInHTML.getText();
 		return DescriptionThinkingInHTMLPage;
+	}
+	
+	public void verifyThinkingHTMLReviews()
+	{
+		
+		reviewsOfThinkingHTML.click();
+		
+		
 	}
 	
 }

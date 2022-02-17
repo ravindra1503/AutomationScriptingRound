@@ -32,6 +32,8 @@ public class SeleniumRuby
 	@FindBy (xpath="(//div[@id='tab-description'])//p")
 	private WebElement descriptionOfSeleniumRuby;
 	
+	@FindBy (xpath="//a[text()='Reviews (0)']")
+	private WebElement reviewsOfSeleniumRuby;
 	
 	public SeleniumRuby(WebDriver driver)
 	{
@@ -48,11 +50,19 @@ public class SeleniumRuby
 	
 	public String verifySeleniumRubyDescription()
 	{
-		
 		clickOnSeleniumRubyDescription.click();
 		
 		String DescriptionSeleneiumRubyPage=descriptionOfSeleniumRuby.getText();
 		return DescriptionSeleneiumRubyPage;
+	}
+	
+	
+	public void verifySeleniumRubyReviews()
+	{
+		
+		reviewsOfSeleniumRuby.click();
+		
+		
 	}
 	
 }
