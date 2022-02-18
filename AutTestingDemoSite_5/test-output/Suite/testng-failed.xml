@@ -7,33 +7,18 @@
       <class name="TestClass.TestClassWithTestNG">
         <methods>
           <include name="closePOMObject"/>
-          <include name="verifyArrivals"/>
+          <include name="checkOutPaymentGatewayFillDetails"/>
+          <include name="checkOutPaymentGatewayPlaceOrder"/>
           <include name="afterMethod"/>
+          <include name="checkOutFunctionalityFromBasketTab"/>
           <include name="closeBrowser"/>
+          <include name="totalAndSubTotalPriceOfBook"/>
           <include name="beforeMethod"/>
           <include name="objectOfPOM"/>
-          <include name="verifySliders"/>
           <include name="imagesDiscription"/>
-          <include name="seleniumRuby"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- TestClass.TestClassWithTestNG -->
     </classes>
   </test> <!-- TestA(failed) -->
-  <test thread-count="5" name="TestB(failed)">
-    <parameter name="browser" value="Firefox"/>
-    <classes>
-      <class name="TestClass.TestClassWithTestNG">
-        <methods>
-          <include name="closePOMObject"/>
-          <include name="afterMethod"/>
-          <include name="closeBrowser"/>
-          <include name="beforeMethod"/>
-          <include name="objectOfPOM"/>
-          <include name="imagesDiscription"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- TestClass.TestClassWithTestNG -->
-    </classes>
-  </test> <!-- TestB(failed) -->
 </suite> <!-- Failed suite [Suite] -->

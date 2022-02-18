@@ -8,10 +8,5 @@
     </classes>
   </test> <!-- Test -->
   
-   <test thread-count="5" name="TestB">
-  	<parameter name="browser" value="Firefox"/>
-    <classes>
-      <class name="TestClass.TestClassWithTestNG"/>
-    </classes>
-  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

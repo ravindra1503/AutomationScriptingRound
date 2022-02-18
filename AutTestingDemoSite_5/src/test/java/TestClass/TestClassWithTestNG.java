@@ -21,6 +21,7 @@ import org.testng.asserts.SoftAssert;
 import Base.Browser;
 import POM.Arrivals;
 import POM.BookBasket;
+import POM.CheckoutPage;
 import POM.Home;
 import POM.MasteringJavaScript;
 import POM.MenuPage;
@@ -43,6 +44,7 @@ public class TestClassWithTestNG extends Browser
 	private MasteringJavaScript masteringJavaScript;
 	private MenuPage menu;
 	private BookBasket baskettab;
+	private CheckoutPage checkoutPage;
 	private int TestId;
 	
 	@BeforeTest
@@ -75,7 +77,7 @@ public class TestClassWithTestNG extends Browser
 		thinkingInHTML=new ThinkingInHTML(driver);
 		masteringJavaScript= new MasteringJavaScript(driver);
 		baskettab=new BookBasket(driver);
-		
+		checkoutPage=new CheckoutPage(driver);
 	}
 	
 	
@@ -86,15 +88,14 @@ public class TestClassWithTestNG extends Browser
 				
 		driver.get("http://practice.automationtesting.in/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		shop.clickOnShop();
-		
-		home.clickOnHome();
+		menu.clickOnShop();
+		menu.clickOnHome();
+
 		
 	}
 	
 	//Test Case 1
-	@Test
+	@Test (priority=1)
 	public void verifySliders()
 	{
 		TestId=101;
@@ -102,17 +103,12 @@ public class TestClassWithTestNG extends Browser
 		
 		int slidersSize=sliders.sliderSize();
 		softAssert.assertEquals(slidersSize, 3);
-		
-//		if(slidersSize == 3)
-//			System.out.println("Test Case is passed.");
-//		else 
-//			System.out.println("Test case is failed!");
-		
+			
 		softAssert.assertAll();
 	}
 	
 	//Test case 2
-	@Test
+	@Test (priority=2)
 	public void verifyArrivals()
 	{
 		TestId=102;
@@ -120,17 +116,12 @@ public class TestClassWithTestNG extends Browser
 		
 		int arrivalssize=arrivals.arrivalSize();
 		softAssert.assertEquals(arrivalssize, 3);
-		
-//		if(arrivalssize == 3)
-//			System.out.println("Test Case is passed.");
-//		else 
-//			System.out.println("Test case is failed!");
-		
+			
 		softAssert.assertAll();
 	}
 	
 	//Test case 3
-	@Test
+	@Test (priority=3)
 	public void seleniumRuby()
 	{
 		TestId=103;
@@ -156,7 +147,7 @@ public class TestClassWithTestNG extends Browser
 	}
 	
 	//Test Case 4
-	@Test
+	@Test (priority=4)
 	public void imagesDiscription()
 	{
 		TestId=104;
@@ -193,7 +184,7 @@ public class TestClassWithTestNG extends Browser
 	}
 	
 	//Test case 5
-	@Test
+	@Test (priority=5)
 	public void imageReview()
 	{
 		TestId=105;
@@ -220,7 +211,7 @@ public class TestClassWithTestNG extends Browser
 
 	
 	//Test case 6
-	@Test
+	@Test (priority=6)
 	public void addBookToBasket()
 	{
 		TestId=106;
@@ -237,7 +228,7 @@ public class TestClassWithTestNG extends Browser
 	
 	
 	// Test Case 7
-	@Test
+	@Test (priority=7)
 	public void verifyHighestQuantityError()
 	{
 		TestId=107;
@@ -256,7 +247,7 @@ public class TestClassWithTestNG extends Browser
 	
 	
 	//Test Case 8
-	@Test
+	@Test (priority=8)
 	public void checkBasketPage()
 	{
 		TestId=108;
@@ -274,7 +265,7 @@ public class TestClassWithTestNG extends Browser
 	
 	
 	//Test Case 9
-		@Test
+		@Test (priority=9)
 		public void ApplyCoupon()
 		{
 			TestId=109;
@@ -294,10 +285,10 @@ public class TestClassWithTestNG extends Browser
 	
 		
 		//Test Case 10
-		@Test
+		@Test (priority=10)
 		public void unableToApplyCouponCode()
 		{
-					TestId=109;
+					TestId=110;
 					
 					int arrivalssize=arrivals.arrivalSize();
 					softAssert.assertEquals(arrivalssize, 3);
@@ -311,9 +302,209 @@ public class TestClassWithTestNG extends Browser
 					softAssert.assertAll();
 		}	
 		
+	
+		
+	// Test Case 11
+	@Test (priority=11)
+	public void removeBook()
+	{
+				TestId=111;
+				
+				int arrivalssize=arrivals.arrivalSize();
+				softAssert.assertEquals(arrivalssize, 3);
+				
+				masteringJavaScript.clickOnMasteringJavaScriptImage();
+				masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+				menu.clickMenuBasket();
+				softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+				String bookRemoveMessage =baskettab.clickRemoveThisBookIcon();
+				softAssert.assertEquals(bookRemoveMessage, "Your basket is currently empty.");
+				softAssert.assertAll();
+				
+	}	
 		
 	
+	//Test 12
+	@Test (priority=12)
+	public void updateBook()
+	{
+		TestId=112;
+				
+		int arrivalssize=arrivals.arrivalSize();
+		softAssert.assertEquals(arrivalssize, 3);
+				
+		masteringJavaScript.clickOnMasteringJavaScriptImage();
+		masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+		menu.clickMenuBasket();
+		softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+		
+		baskettab.addQuantity();
+		baskettab.clickUpdateBasket();
+			
+		softAssert.assertAll();
+				
+	}	
 	
+	
+	
+	//Test Case 13
+	@Test (priority=13)
+	public void totalPriceOfBook()
+	{
+		TestId=113;
+				
+		int arrivalssize=arrivals.arrivalSize();
+		softAssert.assertEquals(arrivalssize, 3);
+				
+		masteringJavaScript.clickOnMasteringJavaScriptImage();
+		masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+		menu.clickMenuBasket();
+		softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+		
+		baskettab.addQuantity();
+		baskettab.clickUpdateBasket();
+		baskettab.checkTotalPriceOfBook();
+		
+		softAssert.assertAll();
+				
+	}	
+	
+	//Test Case 14
+		@Test (priority=14)
+		public void updateBasketBook()
+		{
+			TestId=114;
+					
+			int arrivalssize=arrivals.arrivalSize();
+			softAssert.assertEquals(arrivalssize, 3);
+					
+			masteringJavaScript.clickOnMasteringJavaScriptImage();
+			masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+			menu.clickMenuBasket();
+			softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+			
+			baskettab.addQuantity();
+			baskettab.clickUpdateBasket();
+			
+			softAssert.assertAll();
+					
+		}	
+		
+		//Test Case 15
+		@Test (priority=15)
+		public void totalAndSubTotalPriceOfBook()
+		{
+			TestId=115;
+							
+			int arrivalssize=arrivals.arrivalSize();
+			softAssert.assertEquals(arrivalssize, 3);
+							
+			masteringJavaScript.clickOnMasteringJavaScriptImage();
+			masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+			menu.clickMenuBasket();
+			softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+			
+			baskettab.addQuantity();
+			baskettab.clickUpdateBasket();
+			boolean ComparisionOfTotalAndSubTotal =baskettab.compareTotalSubTotalPrice();
+			softAssert.assertTrue(ComparisionOfTotalAndSubTotal);
+
+			softAssert.assertAll();
+							
+		}		
+		
+		//Test Case 16
+		@Test (priority=16)
+		public void checkOutFunctionalityFromBasketTab()
+		{
+			TestId=116;
+									
+			int arrivalssize=arrivals.arrivalSize();
+			softAssert.assertEquals(arrivalssize, 3);
+									
+			masteringJavaScript.clickOnMasteringJavaScriptImage();
+			masteringJavaScript.addMasteringJavascriptBookToBasket("1");
+			menu.clickMenuBasket();
+			softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+					
+			baskettab.addQuantity();
+			baskettab.clickUpdateBasket();
+			boolean ComparisionOfTotalAndSubTotal =baskettab.compareTotalSubTotalPrice();
+			softAssert.assertTrue(ComparisionOfTotalAndSubTotal);
+			
+			baskettab.clickOnCheckoutButton();
+			
+			softAssert.assertEquals(driver.getTitle(), "Checkout – Automation Practice Site");
+			
+			softAssert.assertAll();
+									
+		}		
+		
+		
+	//Test Case 17
+	@Test (priority=17)
+	public void checkOutPaymentGatewayFillDetails()
+	{
+		TestId=117;
+											
+		int arrivalssize=arrivals.arrivalSize();
+		softAssert.assertEquals(arrivalssize, 3);
+											
+		masteringJavaScript.clickOnMasteringJavaScriptImage();
+		masteringJavaScript.addMasteringJavascriptBookToBasket("2");
+		menu.clickMenuBasket();
+		softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+							
+		baskettab.addQuantity();
+		baskettab.clickUpdateBasket();
+		boolean ComparisionOfTotalAndSubTotal =baskettab.compareTotalSubTotalPrice();
+		softAssert.assertTrue(ComparisionOfTotalAndSubTotal);
+		
+		baskettab.clickOnCheckoutButton();
+					
+		softAssert.assertEquals(driver.getTitle(), "Checkout – Automation Practice Site");
+		
+		checkoutPage.fillCheckoutBillingDetails();
+		
+			
+		softAssert.assertAll();
+											
+	}		
+		
+	
+	//Test Case 18
+	@Test (priority=18)
+	public void checkOutPaymentGatewayPlaceOrder()
+	{
+		TestId=118;
+											
+		int arrivalssize=arrivals.arrivalSize();
+		softAssert.assertEquals(arrivalssize, 3);
+											
+		masteringJavaScript.clickOnMasteringJavaScriptImage();
+		masteringJavaScript.addMasteringJavascriptBookToBasket("2");
+		menu.clickMenuBasket();
+		softAssert.assertEquals(driver.getTitle(), "Basket – Automation Practice Site");
+							
+		baskettab.addQuantity();
+		baskettab.clickUpdateBasket();
+		boolean ComparisionOfTotalAndSubTotal =baskettab.compareTotalSubTotalPrice();
+		softAssert.assertTrue(ComparisionOfTotalAndSubTotal);
+		
+		baskettab.clickOnCheckoutButton();
+					
+		softAssert.assertEquals(driver.getTitle(), "Checkout – Automation Practice Site");
+		
+		checkoutPage.fillCheckoutBillingDetails();
+		
+		softAssert.assertEquals(driver.getTitle(), "Checkout – Automation Practice Site");
+		
+		
+		softAssert.assertAll();
+											
+	}		
+		
+		
 	
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws IOException

@@ -5,10 +5,30 @@
     <classes>
       <class name="TestClass.TestClassWithTestNG">
         <methods>
+          <include name="verifyHighestQuantityError"/>
           <include name="afterMethod"/>
+          <include name="addBookToBasket"/>
+          <include name="checkBasketPage"/>
+          <include name="totalAndSubTotalPriceOfBook"/>
+          <include name="ApplyCoupon"/>
           <include name="beforeMethod"/>
+          <include name="totalPriceOfBook"/>
+          <include name="objectOfPOM"/>
+          <include name="unableToApplyCouponCode"/>
+          <include name="updateBook"/>
+          <include name="launchBrowser"/>
+          <include name="closePOMObject"/>
+          <include name="checkOutPaymentGatewayFillDetails"/>
+          <include name="checkOutPaymentGatewayPlaceOrder"/>
+          <include name="verifyArrivals"/>
+          <include name="checkOutFunctionalityFromBasketTab"/>
+          <include name="closeBrowser"/>
+          <include name="removeBook"/>
+          <include name="imageReview"/>
+          <include name="verifySliders"/>
+          <include name="updateBasketBook"/>
           <include name="imagesDiscription"/>
-          <include name="beforeClass"/>
+          <include name="seleniumRuby"/>
         </methods>
       </class> <!-- TestClass.TestClassWithTestNG -->
     </classes>

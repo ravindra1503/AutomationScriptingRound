@@ -24,8 +24,6 @@ public class Utility {
 		File dest=new File("F:\\Automation Testing\\Screenshot\\Project5\\FailedTestCaseID"+testID+"_"+date+".png");
 		FileHandler.copy(src, dest);
 	
-	
-	
 	}
 	
 }

@@ -61,10 +61,17 @@ public class MasteringJavaScript {
 	
 	public void addMasteringJavascriptBookToBasket(String NumberOfBooks)
 	{
+		inputHighestQuantityForBook.clear();
 		inputHighestQuantityForBook.sendKeys(NumberOfBooks);
 		addBookToBasket.click();
-		
 	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

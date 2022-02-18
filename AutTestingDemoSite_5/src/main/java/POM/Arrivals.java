@@ -19,7 +19,7 @@ import org.openqa.selenium.support.PageFactory;
 public class Arrivals {
 	//http://practice.automationtesting.in/
 	
-	@FindBy (xpath="/html/body/div[1]/div[2]/div/div/div/div/div/div[2]/div/div/div/div/div[2]//img")
+	@FindBy (xpath="(//div[@class='tb-column-inner'])[2]/div[2]/div")
 	private List<WebElement> arrival;
 	
 	

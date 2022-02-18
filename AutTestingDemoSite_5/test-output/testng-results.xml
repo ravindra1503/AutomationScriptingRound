@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="3" failed="3" skipped="2">
+<testng-results ignored="0" total="18" passed="13" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-10T11:24:05 IST" name="Suite" finished-at="2022-02-10T11:31:43 IST" duration-ms="458457">
+  <suite started-at="2022-02-18T23:55:17 IST" name="Suite" finished-at="2022-02-19T00:02:57 IST" duration-ms="460646">
     <groups>
     </groups>
-    <test started-at="2022-02-10T11:24:05 IST" name="TestA" finished-at="2022-02-10T11:28:04 IST" duration-ms="239336">
+    <test started-at="2022-02-18T23:55:17 IST" name="TestA" finished-at="2022-02-19T00:02:57 IST" duration-ms="460646">
       <class name="TestClass.TestClassWithTestNG">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:24:05 IST" name="launchBrowser" finished-at="2022-02-10T11:24:09 IST" duration-ms="4115" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:55:17 IST" name="launchBrowser" finished-at="2022-02-18T23:55:25 IST" duration-ms="8071" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,459 +18,90 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="objectOfPOM()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:24:09 IST" name="objectOfPOM" finished-at="2022-02-10T11:24:09 IST" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="objectOfPOM()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:55:25 IST" name="objectOfPOM" finished-at="2022-02-18T23:55:26 IST" duration-ms="883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectOfPOM -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:24:09 IST" name="beforeMethod" finished-at="2022-02-10T11:24:38 IST" duration-ms="28549" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:55:26 IST" name="beforeMethod" finished-at="2022-02-18T23:55:54 IST" duration-ms="27954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="imagesDiscription()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:24:38 IST" name="imagesDiscription" finished-at="2022-02-10T11:24:51 IST" duration-ms="13794" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a href="#tab-description">...</a> is not clickable at point (178, 585). Other element would receive the click: <div class="pp_overlay" style="opacity: 0.8; height: 2032px; width: 1349px; display: block;"></div>
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#tab-description">...</a> is not clickable at point (178, 585). Other element would receive the click: <div class="pp_overlay" style="opacity: 0.8; height: 2032px; width: 1349px; display: block;"></div>
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at POM.ThinkingInHTML.verifyThinkingInHTMLDescription(ThinkingInHTML.java:57)
-at TestClass.TestClassWithTestNG.imagesDiscription(TestClassWithTestNG.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- imagesDiscription -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:24:51 IST" name="afterMethod" finished-at="2022-02-10T11:24:53 IST" duration-ms="2139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:24:53 IST" name="beforeMethod" finished-at="2022-02-10T11:25:05 IST" duration-ms="11316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="seleniumRuby()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:25:05 IST" name="seleniumRuby" finished-at="2022-02-10T11:28:04 IST" duration-ms="179006" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002
-*** Element info: {Using=xpath, value=//img[@title='Thinking in HTML']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002
-*** Element info: {Using=xpath, value=//img[@title='Thinking in HTML']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at POM.ThinkingInHTML.clickOnThinkingInHTMLImage(ThinkingInHTML.java:50)
-at TestClass.TestClassWithTestNG.seleniumRuby(TestClassWithTestNG.java:135)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seleniumRuby -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="afterMethod" finished-at="2022-02-10T11:28:04 IST" duration-ms="12" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
-at TestClass.TestClassWithTestNG.afterMethod(TestClassWithTestNG.java:204)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644472684314" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyArrivals()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="verifyArrivals" finished-at="2022-02-10T11:28:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
-at TestClass.TestClassWithTestNG.afterMethod(TestClassWithTestNG.java:204)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyArrivals -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644472684333" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644472684342" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySliders()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="verifySliders" finished-at="2022-02-10T11:28:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8fb1c88082672aa361efd1c89e5a002
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:865)
-at TestClass.TestClassWithTestNG.afterMethod(TestClassWithTestNG.java:204)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="verifySliders()[pri:1, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:55:54 IST" name="verifySliders" finished-at="2022-02-18T23:55:54 IST" duration-ms="634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySliders -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644472684382" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="closePOMObject()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="closePOMObject" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644472684387" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closePOMObject -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClass.TestClassWithTestNG@1725dc0f]" started-at="2022-02-10T11:28:04 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1644472684426" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- TestClass.TestClassWithTestNG -->
-    </test> <!-- TestA -->
-    <test started-at="2022-02-10T11:28:05 IST" name="TestB" finished-at="2022-02-10T11:31:43 IST" duration-ms="218519">
-      <class name="TestClass.TestClassWithTestNG">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:28:05 IST" name="launchBrowser" finished-at="2022-02-10T11:28:38 IST" duration-ms="33714" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:55:54 IST" name="afterMethod" finished-at="2022-02-18T23:55:57 IST" duration-ms="2667" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[[TestResult name=verifySliders status=SUCCESS method=TestClassWithTestNG.verifySliders()[pri:1, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="objectOfPOM()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:28:38 IST" name="objectOfPOM" finished-at="2022-02-10T11:28:38 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- objectOfPOM -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:28:38 IST" name="beforeMethod" finished-at="2022-02-10T11:29:14 IST" duration-ms="36231" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:55:57 IST" name="beforeMethod" finished-at="2022-02-18T23:56:06 IST" duration-ms="8716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="imagesDiscription()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:29:14 IST" name="imagesDiscription" finished-at="2022-02-10T11:29:33 IST" duration-ms="18307" status="FAIL">
+        <test-method signature="verifyArrivals()[pri:2, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:56:06 IST" name="verifyArrivals" finished-at="2022-02-18T23:56:06 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyArrivals -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:56:06 IST" name="afterMethod" finished-at="2022-02-18T23:56:07 IST" duration-ms="1578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyArrivals status=SUCCESS method=TestClassWithTestNG.verifyArrivals()[pri:2, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:56:07 IST" name="beforeMethod" finished-at="2022-02-18T23:56:16 IST" duration-ms="8418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="seleniumRuby()[pri:3, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:56:16 IST" name="seleniumRuby" finished-at="2022-02-18T23:56:32 IST" duration-ms="16240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumRuby -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:56:32 IST" name="afterMethod" finished-at="2022-02-18T23:56:35 IST" duration-ms="2817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=seleniumRuby status=SUCCESS method=TestClassWithTestNG.seleniumRuby()[pri:3, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:56:35 IST" name="beforeMethod" finished-at="2022-02-18T23:56:55 IST" duration-ms="20034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="imagesDiscription()[pri:4, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:56:55 IST" name="imagesDiscription" finished-at="2022-02-18T23:57:07 IST" duration-ms="11519" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Element <a href="#tab-description"> is not clickable at point (178,614) because another element <div class="pp_overlay"> obscures it
+              <![CDATA[element click intercepted: Element <a href="#tab-description">...</a> is not clickable at point (178, 585). Other element would receive the click: <div class="pp_overlay" style="opacity: 0.8; height: 2032px; width: 1349px; display: block;"></div>
+  (Session info: chrome=98.0.4758.102)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 67124, moz:profile: C:\Users\Lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4ba57324-d782-4bb9-b06c-16d79dc9fbf5]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64621}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 233aa7a74354154d94aa36362767a555]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a href="#tab-description"> is not clickable at point (178,614) because another element <div class="pp_overlay"> obscures it
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#tab-description">...</a> is not clickable at point (178, 585). Other element would receive the click: <div class="pp_overlay" style="opacity: 0.8; height: 2032px; width: 1349px; display: block;"></div>
+  (Session info: chrome=98.0.4758.102)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-S1NRV2S', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 67124, moz:profile: C:\Users\Lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4ba57324-d782-4bb9-b06c-16d79dc9fbf5
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64621}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 233aa7a74354154d94aa36362767a555
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -484,13 +115,14 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at POM.ThinkingInHTML.verifyThinkingInHTMLDescription(ThinkingInHTML.java:57)
-at TestClass.TestClassWithTestNG.imagesDiscription(TestClassWithTestNG.java:172)
+at POM.ThinkingInHTML.verifyThinkingInHTMLDescription(ThinkingInHTML.java:59)
+at TestClass.TestClassWithTestNG.imagesDiscription(TestClassWithTestNG.java:169)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -525,55 +157,460 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- imagesDiscription -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:29:33 IST" name="afterMethod" finished-at="2022-02-10T11:29:49 IST" duration-ms="16141" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:57:07 IST" name="afterMethod" finished-at="2022-02-18T23:57:10 IST" duration-ms="3626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=imagesDiscription status=FAILURE method=TestClassWithTestNG.imagesDiscription()[pri:4, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:29:49 IST" name="beforeMethod" finished-at="2022-02-10T11:30:01 IST" duration-ms="12367" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:57:10 IST" name="beforeMethod" finished-at="2022-02-18T23:57:19 IST" duration-ms="8624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="seleniumRuby()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:30:01 IST" name="seleniumRuby" finished-at="2022-02-10T11:30:32 IST" duration-ms="31059" status="PASS">
+        <test-method signature="imageReview()[pri:5, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:57:19 IST" name="imageReview" finished-at="2022-02-18T23:57:34 IST" duration-ms="14935" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seleniumRuby -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:30:32 IST" name="afterMethod" finished-at="2022-02-10T11:30:41 IST" duration-ms="8317" status="PASS">
+        </test-method> <!-- imageReview -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:57:34 IST" name="afterMethod" finished-at="2022-02-18T23:57:36 IST" duration-ms="2513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=imageReview status=SUCCESS method=TestClassWithTestNG.imageReview()[pri:5, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:30:41 IST" name="beforeMethod" finished-at="2022-02-10T11:30:55 IST" duration-ms="14487" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:57:36 IST" name="beforeMethod" finished-at="2022-02-18T23:57:45 IST" duration-ms="9158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyArrivals()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:30:55 IST" name="verifyArrivals" finished-at="2022-02-10T11:30:55 IST" duration-ms="67" status="PASS">
+        <test-method signature="addBookToBasket()[pri:6, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:57:45 IST" name="addBookToBasket" finished-at="2022-02-18T23:57:52 IST" duration-ms="6392" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyArrivals -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:30:55 IST" name="afterMethod" finished-at="2022-02-10T11:31:05 IST" duration-ms="9313" status="PASS">
+        </test-method> <!-- addBookToBasket -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:57:52 IST" name="afterMethod" finished-at="2022-02-18T23:57:54 IST" duration-ms="2151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addBookToBasket status=SUCCESS method=TestClassWithTestNG.addBookToBasket()[pri:6, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:31:05 IST" name="beforeMethod" finished-at="2022-02-10T11:31:27 IST" duration-ms="22157" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:57:54 IST" name="beforeMethod" finished-at="2022-02-18T23:58:06 IST" duration-ms="12346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySliders()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:31:27 IST" name="verifySliders" finished-at="2022-02-10T11:31:27 IST" duration-ms="50" status="PASS">
+        <test-method signature="verifyHighestQuantityError()[pri:7, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:06 IST" name="verifyHighestQuantityError" finished-at="2022-02-18T23:58:11 IST" duration-ms="4884" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySliders -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:31:27 IST" name="afterMethod" finished-at="2022-02-10T11:31:36 IST" duration-ms="9029" status="PASS">
+        </test-method> <!-- verifyHighestQuantityError -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:11 IST" name="afterMethod" finished-at="2022-02-18T23:58:13 IST" duration-ms="2128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHighestQuantityError status=SUCCESS method=TestClassWithTestNG.verifyHighestQuantityError()[pri:7, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="closePOMObject()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:31:36 IST" name="closePOMObject" finished-at="2022-02-10T11:31:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:13 IST" name="beforeMethod" finished-at="2022-02-18T23:58:23 IST" duration-ms="9916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkBasketPage()[pri:8, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:23 IST" name="checkBasketPage" finished-at="2022-02-18T23:58:33 IST" duration-ms="9788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBasketPage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:33 IST" name="afterMethod" finished-at="2022-02-18T23:58:36 IST" duration-ms="3431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkBasketPage status=SUCCESS method=TestClassWithTestNG.checkBasketPage()[pri:8, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:36 IST" name="beforeMethod" finished-at="2022-02-18T23:58:44 IST" duration-ms="7867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ApplyCoupon()[pri:9, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:44 IST" name="ApplyCoupon" finished-at="2022-02-18T23:58:55 IST" duration-ms="10409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyCoupon -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:55 IST" name="afterMethod" finished-at="2022-02-18T23:58:58 IST" duration-ms="2947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ApplyCoupon status=SUCCESS method=TestClassWithTestNG.ApplyCoupon()[pri:9, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:58:58 IST" name="beforeMethod" finished-at="2022-02-18T23:59:07 IST" duration-ms="9807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="unableToApplyCouponCode()[pri:10, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:59:07 IST" name="unableToApplyCouponCode" finished-at="2022-02-18T23:59:21 IST" duration-ms="13982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unableToApplyCouponCode -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:59:21 IST" name="afterMethod" finished-at="2022-02-18T23:59:22 IST" duration-ms="33" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=unableToApplyCouponCode status=SUCCESS method=TestClassWithTestNG.unableToApplyCouponCode()[pri:10, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:59:22 IST" name="beforeMethod" finished-at="2022-02-18T23:59:33 IST" duration-ms="11193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="removeBook()[pri:11, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:59:33 IST" name="removeBook" finished-at="2022-02-18T23:59:44 IST" duration-ms="11577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeBook -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:59:44 IST" name="afterMethod" finished-at="2022-02-18T23:59:46 IST" duration-ms="1749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removeBook status=SUCCESS method=TestClassWithTestNG.removeBook()[pri:11, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:59:46 IST" name="beforeMethod" finished-at="2022-02-18T23:59:54 IST" duration-ms="8350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="updateBook()[pri:12, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-18T23:59:54 IST" name="updateBook" finished-at="2022-02-19T00:00:05 IST" duration-ms="10731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBook -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:00:05 IST" name="afterMethod" finished-at="2022-02-19T00:00:05 IST" duration-ms="41" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateBook status=SUCCESS method=TestClassWithTestNG.updateBook()[pri:12, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:00:05 IST" name="beforeMethod" finished-at="2022-02-19T00:00:25 IST" duration-ms="19433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="totalPriceOfBook()[pri:13, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:00:25 IST" name="totalPriceOfBook" finished-at="2022-02-19T00:00:39 IST" duration-ms="14015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalPriceOfBook -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:00:39 IST" name="afterMethod" finished-at="2022-02-19T00:00:42 IST" duration-ms="3221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=totalPriceOfBook status=SUCCESS method=TestClassWithTestNG.totalPriceOfBook()[pri:13, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:00:42 IST" name="beforeMethod" finished-at="2022-02-19T00:00:50 IST" duration-ms="7738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="updateBasketBook()[pri:14, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:00:50 IST" name="updateBasketBook" finished-at="2022-02-19T00:01:01 IST" duration-ms="11668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBasketBook -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:01:01 IST" name="afterMethod" finished-at="2022-02-19T00:01:01 IST" duration-ms="43" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateBasketBook status=SUCCESS method=TestClassWithTestNG.updateBasketBook()[pri:14, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:01:01 IST" name="beforeMethod" finished-at="2022-02-19T00:01:12 IST" duration-ms="11177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="totalAndSubTotalPriceOfBook()[pri:15, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:01:12 IST" name="totalAndSubTotalPriceOfBook" finished-at="2022-02-19T00:01:22 IST" duration-ms="9773" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "1,050.00"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "1,050.00"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+at java.base/java.lang.Float.parseFloat(Float.java:476)
+at POM.BookBasket.compareTotalSubTotalPrice(BookBasket.java:86)
+at TestClass.TestClassWithTestNG.totalAndSubTotalPriceOfBook(TestClassWithTestNG.java:409)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalAndSubTotalPriceOfBook -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:01:22 IST" name="afterMethod" finished-at="2022-02-19T00:01:26 IST" duration-ms="4111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=totalAndSubTotalPriceOfBook status=FAILURE method=TestClassWithTestNG.totalAndSubTotalPriceOfBook()[pri:15, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:01:26 IST" name="beforeMethod" finished-at="2022-02-19T00:01:44 IST" duration-ms="17492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkOutFunctionalityFromBasketTab()[pri:16, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:01:44 IST" name="checkOutFunctionalityFromBasketTab" finished-at="2022-02-19T00:01:54 IST" duration-ms="9692" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "1,050.00"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "1,050.00"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+at java.base/java.lang.Float.parseFloat(Float.java:476)
+at POM.BookBasket.compareTotalSubTotalPrice(BookBasket.java:86)
+at TestClass.TestClassWithTestNG.checkOutFunctionalityFromBasketTab(TestClassWithTestNG.java:432)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutFunctionalityFromBasketTab -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:01:54 IST" name="afterMethod" finished-at="2022-02-19T00:01:57 IST" duration-ms="3853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutFunctionalityFromBasketTab status=FAILURE method=TestClassWithTestNG.checkOutFunctionalityFromBasketTab()[pri:16, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:01:57 IST" name="beforeMethod" finished-at="2022-02-19T00:02:05 IST" duration-ms="7859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkOutPaymentGatewayFillDetails()[pri:17, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:02:05 IST" name="checkOutPaymentGatewayFillDetails" finished-at="2022-02-19T00:02:18 IST" duration-ms="12281" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "1,400.00"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "1,400.00"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+at java.base/java.lang.Float.parseFloat(Float.java:476)
+at POM.BookBasket.compareTotalSubTotalPrice(BookBasket.java:86)
+at TestClass.TestClassWithTestNG.checkOutPaymentGatewayFillDetails(TestClassWithTestNG.java:460)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutPaymentGatewayFillDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:02:18 IST" name="afterMethod" finished-at="2022-02-19T00:02:20 IST" duration-ms="2153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutPaymentGatewayFillDetails status=FAILURE method=TestClassWithTestNG.checkOutPaymentGatewayFillDetails()[pri:17, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:02:20 IST" name="beforeMethod" finished-at="2022-02-19T00:02:29 IST" duration-ms="9660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkOutPaymentGatewayPlaceOrder()[pri:18, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:02:29 IST" name="checkOutPaymentGatewayPlaceOrder" finished-at="2022-02-19T00:02:52 IST" duration-ms="22375" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "1,400.00"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "1,400.00"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+at java.base/java.lang.Float.parseFloat(Float.java:476)
+at POM.BookBasket.compareTotalSubTotalPrice(BookBasket.java:86)
+at TestClass.TestClassWithTestNG.checkOutPaymentGatewayPlaceOrder(TestClassWithTestNG.java:491)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutPaymentGatewayPlaceOrder -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:02:52 IST" name="afterMethod" finished-at="2022-02-19T00:02:54 IST" duration-ms="2686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutPaymentGatewayPlaceOrder status=FAILURE method=TestClassWithTestNG.checkOutPaymentGatewayPlaceOrder()[pri:18, instance:TestClass.TestClassWithTestNG@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="closePOMObject()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:02:54 IST" name="closePOMObject" finished-at="2022-02-19T00:02:54 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePOMObject -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClass.TestClassWithTestNG@192d43ce]" started-at="2022-02-10T11:31:36 IST" name="closeBrowser" finished-at="2022-02-10T11:31:43 IST" duration-ms="7257" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClass.TestClassWithTestNG@7193666c]" started-at="2022-02-19T00:02:54 IST" name="closeBrowser" finished-at="2022-02-19T00:02:57 IST" duration-ms="2984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- TestClass.TestClassWithTestNG -->
-    </test> <!-- TestB -->
+    </test> <!-- TestA -->
   </suite> <!-- Suite -->
 </testng-results>
